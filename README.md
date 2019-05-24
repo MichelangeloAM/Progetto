@@ -5,6 +5,6 @@ Inizio progetto: 14/05/2019
 
 Consegna prevista: 20/06/2019
 
-prova
+Ciao Simone, questa è la prima
 
-ciao
+prova di Pull e Push tra Git ed Eclipse!
