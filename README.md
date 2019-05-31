@@ -8,3 +8,5 @@ Consegna prevista: 20/06/2019
 Ciao Simone, questa è la prima
 
 prova di Pull e Push tra Git ed Eclipse!
+
+ciao, sono simone!
