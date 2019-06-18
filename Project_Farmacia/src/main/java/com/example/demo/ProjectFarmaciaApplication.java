@@ -13,9 +13,10 @@ public class ProjectFarmaciaApplication {
 		return "Hello World!";
 	}
 
-	public static void main(String[] args) {
+	public static void main(java.lang.String[] args) {
 		SpringApplication.run(ProjectFarmaciaApplication.class, args);
 	}
 	
 
 }
+
