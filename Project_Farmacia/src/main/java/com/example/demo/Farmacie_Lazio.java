@@ -8,15 +8,36 @@ public class Farmacie_Lazio implements Serializable {
     private String Indirizzo;
     private String PartitaIva;
     private int Latitudine;
+    private String CAP;
+    private String CodiceComuneIstat;
+    private String DescrizioneComune;
+    private String CodiceProvinciaIstat;
+    private String SiglaProvincia;
+    private String DescrizioneProvincia;
+    private String CodiceRegione;
+    private String DescrizioneRegione;
 	public Farmacie_Lazio() {
 		// TODO Auto-generated constructor stub
 	}
-	public Farmacie_Lazio(String DenominazioneSitoLogistico, String Indirizzo, String PartitaIva, int number) {
+	
+	public Farmacie_Lazio(String DenominazioneSitoLogistico, String Indirizzo, String PartitaIva, 
+						  int Latitudine, String CAP, String CodiceComuneIstat, String DescrizioneComune, 
+						  String CodiceProvinciaIstat, String SiglaProvincia, String DescrizioneProvincia,
+						  String CodiceRegione, String DescrizioneRegione) {
+		
 		// TODO Auto-generated constructor stub
 		this.DenominazioneSitoLogistico = DenominazioneSitoLogistico;
 		this.Indirizzo = Indirizzo;
 		this.PartitaIva = PartitaIva;
 		this.Latitudine = Latitudine;
+		this.CAP = CAP;
+		this.CodiceComuneIstat = CodiceComuneIstat;
+		this.DescrizioneComune = DescrizioneComune;
+		this.CodiceProvinciaIstat = CodiceProvinciaIstat;
+		this.SiglaProvincia = SiglaProvincia;
+		this.DescrizioneProvincia = DescrizioneProvincia;
+		this.CodiceRegione = CodiceRegione;
+		this.DescrizioneRegione = DescrizioneRegione;
 	}
 	
 	public String getDenominazioneSitoLogistico() {
@@ -25,7 +46,7 @@ public class Farmacie_Lazio implements Serializable {
 	public void setDenominazioneSitoLogistico(String DenominazioneSitoLogistico) {
 		this.DenominazioneSitoLogistico = DenominazioneSitoLogistico;
 	}
-	public String getAIndirizzo() {
+	public String getIndirizzo() {
 		return Indirizzo;
 	}
 	public void setIndirizzo(String Indirizzo) {
@@ -43,8 +64,66 @@ public class Farmacie_Lazio implements Serializable {
 	public void setLatitudine(int Latitudine) {
 		this.Latitudine = Latitudine;
 	}
+	public void setCAP(String CAP) {
+		this.CAP = CAP;
+	}
+	public String getCAP() {
+		return CAP;
+	}
+	public void setCodiceComuneIstat(String CodiceComuneIstat) {
+		this.CodiceComuneIstat = CodiceComuneIstat;
+	}
+	public String getCodiceComuneIstat() {
+		return CodiceComuneIstat;
+	}
+	public void setDescrizioneComune(String DescrizioneComune) {
+		this.DescrizioneComune = DescrizioneComune;
+	}
+	public String getDescrizioneComune() {
+		return DescrizioneComune;
+	}
+	public void setCodiceProvinciaIstat(String CodiceProvinciaIstat) {
+		this.CodiceProvinciaIstat = CodiceProvinciaIstat;
+	}
+	public String getCodiceProvinciaIstat() {
+		return CodiceProvinciaIstat;
+	}
+	public void setSiglaProvincia(String SiglaProvincia) {
+		this.SiglaProvincia = SiglaProvincia;
+	}
+	public String getSiglaProvincia() {
+		return SiglaProvincia;
+	}
+	public void setDescrizioneProvincia(String DescrizioneProvincia) {
+		this.DescrizioneProvincia = DescrizioneProvincia;
+	}
+	public String getDescrizioneProvincia() {
+		return DescrizioneProvincia;
+	}
+	public void setCodiceRegione(String CodiceRegione) {
+		this.CodiceRegione = CodiceRegione;
+	}
+	public String getCodiceRegione() {
+		return CodiceRegione;
+	}
+	public void setDescrizioneRegione(String DescrizioneRegione) {
+		this.DescrizioneRegione = DescrizioneRegione;
+	}
+	public String getDescrizioneRegione() {
+		return DescrizioneRegione;
+	}
+	
+	
+	
+	
 	@Override
 	public String toString() {
-		return "custom method toString for Employee [DenominazioneSitoLogistico=" + DenominazioneSitoLogistico + ", Indirizzo=" + Indirizzo + ", PartitaIva=" + PartitaIva + ", Latitudine=" + Latitudine + "]";
+		return "custom method toString for Farmacie_Lazio [DenominazioneSitoLogistico=" + 
+				DenominazioneSitoLogistico + ", Indirizzo=" + Indirizzo + ", PartitaIva=" + 
+				PartitaIva + ", Latitudine=" + Latitudine + ", CAP=" + CAP + ", CodiceComuneIstat=" + 
+				CodiceComuneIstat + ", DescrizioneComune=" + DescrizioneComune + ", CodiceProvinciaIstat=" + 
+				CodiceProvinciaIstat + ", SiglaProvincia=" + SiglaProvincia +", DescrizioneProvincia=" +
+				DescrizioneProvincia + ", CodiceRegione=" + CodiceRegione + ", DescrizioneRegione=" + 
+				DescrizioneRegione +"]";
 	}
 }
