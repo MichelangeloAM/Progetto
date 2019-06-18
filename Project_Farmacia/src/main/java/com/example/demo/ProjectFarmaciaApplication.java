@@ -8,7 +8,7 @@ public class ProjectFarmaciaApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ProjectFarmaciaApplication.class, args);
-		partita = new Partita_Iva();
+		Partita_Iva partita = new Partita_Iva();
 	}
 	
 
