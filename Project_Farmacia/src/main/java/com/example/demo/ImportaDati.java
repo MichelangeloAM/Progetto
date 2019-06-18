@@ -13,9 +13,6 @@ public class ImportaDati {
 		   ln = br.readLine(); //serve a non leggere la prima riga
 		   do {
 			  System.out.println(br.readLine()); 
-			  if(br.readLine() == null ) {
-				  return;
-			  }
 		   } 
 		   while((ln = br.readLine()) != null);
 		   br.close();
