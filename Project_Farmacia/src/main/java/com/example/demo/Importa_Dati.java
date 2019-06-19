@@ -15,13 +15,13 @@ import org.json.simple.JSONObject;
 import org.json.simple.JSONValue;
 import org.json.simple.parser.ParseException;
 
-public class ImportaDati {
+public class Importa_Dati {
 
 	public static void main(String[] args) {
 
 		String url = "https://www.dati.gov.it/api/3/action/package_show?id=886075d1-b5a6-4ee8-ae74-38febaf74108";
 		if(args.length == 1)
-			url = args[0]; 
+			url = args[0]; //Url by args ;-)
 		try {
 			
 			URLConnection openConnection = new URL(url).openConnection();

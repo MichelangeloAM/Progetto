@@ -1,9 +1,9 @@
 package com.example.demo;
-/*import java.io.*;
+import java.io.*;
 import java.io.IOException;
 
-public class ImportaDati {
-   public static void Importa_Dati(String[] args) {
+public class Lettura_File {
+   public static void Visualizza_Dati(Farmacie_Lazio e2) {
 	   String ln = "";
 	   String separatore = ";";
 	   try {
@@ -21,4 +21,3 @@ public class ImportaDati {
 	   }
    }
 }
-*/
