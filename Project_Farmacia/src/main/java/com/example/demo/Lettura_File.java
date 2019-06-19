@@ -3,7 +3,7 @@ import java.io.*;
 import java.io.IOException;
 
 public class Lettura_File {
-   public static void Visualizza_Dati(Farmacie_Lazio e2) {
+   public static void Visualizza_Dati() {
 	   String ln = "";
 	   String separatore = ";";
 	   try {
