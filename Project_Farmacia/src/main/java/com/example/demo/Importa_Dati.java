@@ -15,7 +15,7 @@ import org.json.simple.JSONObject;
 import org.json.simple.JSONValue;
 import org.json.simple.parser.ParseException;
 
-public class ImportaDati {
+public class Importa_Dati {
 
 	public static void main(String[] args) {
 
