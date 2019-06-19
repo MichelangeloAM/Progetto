@@ -4,26 +4,64 @@ import java.io.*;
 import java.lang.annotation.*;
 import java.sql.Date;
 
+@Retention(RetentionPolicy.RUNTIME)
+@interface Metadati{
+	String name();
+	String type();
+}
 public class Farmacie_Lazio implements Serializable {
-    private String DenominazioneSitoLogistico ;
-    private String Indirizzo;
-    private String PartitaIva;
-    private double Latitudine;
-    private String CAP;
-    private String CodiceComuneIstat;
-    private String DescrizioneComune;
-    private String CodiceProvinciaIstat;
-    private String SiglaProvincia;
-    private String DescrizioneProvincia;
-    private String CodiceRegione;
-    private String DescrizioneRegione;
-    private int Localize;
-    private double Longitudine;
-    private int CodiceIdentificativoSito;
-    private Date DataInizio;
-    private Date DataFine;
+	
+	@Metadati(name="DenominazioneSitoLogistico",type="String")
+		private String DenominazioneSitoLogistico ;
+	
+	@Metadati(name="Indirizzo",type="String")
+		private String Indirizzo;
+	
+	@Metadati(name="PartitaIva",type="String")
+		private String PartitaIva;
+	
+	@Metadati(name="Latitudine",type="double")
+		private double Latitudine;
+	
+	@Metadati(name="CAP",type="String")
+		private String CAP;
+	
+	@Metadati(name="CodiceComuneIstat",type="String")
+		private String CodiceComuneIstat;
+	
+	@Metadati(name="DescrizioneComune",type="String")
+		private String DescrizioneComune;
+	
+	@Metadati(name="CodiceProvinciaIstat",type="String")
+		private String CodiceProvinciaIstat;
+	
+	@Metadati(name="SiglaProvincia",type="String")
+		private String SiglaProvincia;
+	
+	@Metadati(name="DescrizioneProvincia",type="String")
+		private String DescrizioneProvincia;
+		private String CodiceRegione;
+		
+	@Metadati(name="DescrizioneRegione",type="String")
+		private String DescrizioneRegione;
+		
+	@Metadati(name="Localize",type="int")
+		private int Localize;
+		
+	@Metadati(name="Longitudine",type="double")
+		private double Longitudine;
+		
+	@Metadati(name="CodiceIdentificativoSito",type="int")
+		private int CodiceIdentificativoSito;
+	
+	@Metadati(name="DataInizio",type="Date")
+		private Date DataInizio;
+	
+	@Metadati(name="DataFine",type="Date")
+		private Date DataFine;
+		
 	public Farmacie_Lazio() {
-		// TODO Auto-generated constructor stub
+		
 	}
 	
 	public Farmacie_Lazio(String DenominazioneSitoLogistico, String Indirizzo, String PartitaIva, 
@@ -32,7 +70,7 @@ public class Farmacie_Lazio implements Serializable {
 						  String CodiceRegione, String DescrizioneRegione, int Localize, double Longitudine,
 						  int CodiceIdentificativoSito, Date DataInizio, Date DataFine) {
 		
-		// TODO Auto-generated constructor stub
+		
 		this.DenominazioneSitoLogistico = DenominazioneSitoLogistico;
 		this.Indirizzo = Indirizzo;
 		this.PartitaIva = PartitaIva;
