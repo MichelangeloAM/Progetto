@@ -21,7 +21,7 @@ public class ImportaDati {
 
 		String url = "https://www.dati.gov.it/api/3/action/package_show?id=886075d1-b5a6-4ee8-ae74-38febaf74108";
 		if(args.length == 1)
-			url = args[0]; //Url by args ;-)
+			url = args[0]; 
 		try {
 			
 			URLConnection openConnection = new URL(url).openConnection();
