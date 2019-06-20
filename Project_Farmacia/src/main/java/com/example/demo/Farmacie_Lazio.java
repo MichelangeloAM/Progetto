@@ -202,6 +202,6 @@ public class Farmacie_Lazio implements Serializable {
 				CodiceProvinciaIstat + ", SiglaProvincia=" + SiglaProvincia +", DescrizioneProvincia=" +
 				DescrizioneProvincia + ", CodiceRegione=" + CodiceRegione + ", DescrizioneRegione=" + 
 				DescrizioneRegione +", Localize=" + Localize + ", Longitudine=" + Longitudine + ", CodiceIdentificativoSito="
-				 + CodiceIdentificativoSito + ", DataFine=" + DataFine + "]";
+				 + CodiceIdentificativoSito + ", DataInizio=" + DataInizio + ", DataFine=" + DataFine + "]";
 	}
 }
