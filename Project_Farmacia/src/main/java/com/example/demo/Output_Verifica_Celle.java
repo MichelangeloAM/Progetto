@@ -5,11 +5,11 @@ public class Output_Verifica_Celle {
 	private String Cella;
 	private int Clone;
 	
-	public Output_Verifica_Celle(String Cella, int Clone) {
+	public Output_Verifica_Celle (String Cella, int Clone) {
 		this.Cella = Cella;
 		this.Clone = Clone;
 	}
-
+		
 	public String getCella() {
 		return Cella;
 	}
