@@ -1,11 +1,11 @@
 package com.example.demo;
 
-public class Output_Verifica_Stringhe {
+public class Output_Verifica_Celle {
 	
 	private String Cella;
 	private int Clone;
 	
-	public Output_Verifica_Stringhe(String Cella, int Clone) {
+	public Output_Verifica_Celle(String Cella, int Clone) {
 		this.Cella = Cella;
 		this.Clone = Clone;
 	}
@@ -28,6 +28,6 @@ public class Output_Verifica_Stringhe {
 
 	@Override
 	public String toString() {
-		return "Output_Verifica_Stringhe [Cella=" + Cella + ", Clone=" + Clone + "]";
+		return "Output_Verifica_Celle [Cella=" + Cella + ", Clone=" + Clone + "]";
 	}
 }
