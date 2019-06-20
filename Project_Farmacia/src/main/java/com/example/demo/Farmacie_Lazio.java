@@ -2,7 +2,7 @@ package com.example.demo;
 
 import java.io.*;
 import java.lang.annotation.*;
-import java.sql.Date;
+import java.util.Date;
 
 @Retention(RetentionPolicy.RUNTIME)
 @interface Metadati{
