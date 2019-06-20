@@ -10,7 +10,7 @@ public class ProjectFarmaciaApplication {
 	
 	@RequestMapping("/")
 	String home() {
-		return "Hello World!";
+		return "Funziona!";
 	}
 
 	public static void main(java.lang.String[] args) {
