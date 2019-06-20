@@ -11,7 +11,7 @@ public class Serializzazione_Dati {
 
 	public void Serialization() throws ParseException {   
 		
-		Vector<Farmacie_Lazio> v = new Vector<Farmacie_Lazio>();
+		ArrayList<Farmacie_Lazio> v = new ArrayList<Farmacie_Lazio>();
 		try (BufferedReader br = new BufferedReader(new FileReader("ListaFarmacieLazio.csv"))) {
 			String line;
 			while ((line = br.readLine()) != null) {
@@ -20,7 +20,7 @@ public class Serializzazione_Dati {
 				values[12] = format.format( new Date() );
 				values[13] = format.format( new Date() );		
 				Date date12 = format.parse (values[12]);
-		        Date date13 = format.parse (values[12]);
+		        Date date13 = format.parse (values[13]);
 				System.out.println(values.length);
 				v.add(new Farmacie_Lazio(values[1], values[2], values[3], Double.parseDouble(values[14]), 
 										 values[4], values[5], values[6], values[7], values[8], values[9], 
