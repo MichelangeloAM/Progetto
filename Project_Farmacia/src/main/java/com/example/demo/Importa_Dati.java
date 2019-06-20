@@ -81,8 +81,10 @@ public class Importa_Dati {
 
 
 
+// Vecchio codice, dobbiamo decidere che farci...
 
 /*import java.io.*;
+ 
 import java.io.IOException;
 
 public class ImportaDati {
