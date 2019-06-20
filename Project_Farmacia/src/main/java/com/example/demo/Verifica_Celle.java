@@ -3,6 +3,14 @@ package com.example.demo;
 import java.util.ArrayList;
 
 public class Verifica_Celle {
+	
+	private String Cella;
+	private int Clone;
+	
+	public Verifica_Celle(String Cella, int Clone) {
+		this.Cella = Cella;
+		this.Clone = Clone;
+	}
 
 	public static ArrayList<Verifica_Celle> getStatsString(ArrayList<String> strings) {
 		
@@ -21,7 +29,7 @@ public class Verifica_Celle {
 		      if(Cella.equals(stats.get(j).getCella())){
 		        Verificato = true;
 		        RicorrenzaSupp = stats.get(j).getClone() + 1;
-		        support = new Verifica_Celle(Cella,RicorrenzaSupp);
+		        Supp = new Verifica_Celle(Cella,RicorrenzaSupp);
 		        stats.set(j, Supp);
 		       }
 		    }
@@ -32,6 +40,14 @@ public class Verifica_Celle {
 		    }
 		  }
 		  return stats;
+	}
+
+	public int getClone() {
+		return Clone;
+	}
+
+	public String getCella() {
+		return Cella;
 	}
 }
 
