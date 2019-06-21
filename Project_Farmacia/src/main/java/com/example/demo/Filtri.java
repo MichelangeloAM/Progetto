@@ -282,4 +282,4 @@ public class Filtri {
 	  }
 }	
 		// Ciao, Eclipse sta avendo nuovamente problemi, questo commento potrà essere cancellato subito dopo la risoluzione della mia problematica.
-		
+		// Secondo tentativo di risolvere...
