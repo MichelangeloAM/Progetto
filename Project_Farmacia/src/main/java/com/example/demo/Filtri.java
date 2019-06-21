@@ -65,7 +65,7 @@ public class Filtri {
 		
 		
 		
-		if(tipoFiltri.equals("$eq")) {
+		if(tipoFiltri.equals("$uguale")) {
 			if(Num) {
 				try {
 					for(Farmacie_Lazio obj : ListX) {
@@ -111,7 +111,7 @@ public class Filtri {
 			}
 		}
 		
-		if(tipoFiltri.equals("$or")) {
+		if(tipoFiltri.equals("$altro")) {
 			if(Num) {
 				try {
 					for(Farmacie_Lazio obj : ListX) {
@@ -159,7 +159,7 @@ public class Filtri {
 		
 		
 		
-		if(tipoFiltri.equals("$not")) {
+		if(tipoFiltri.equals("$nonuguale")) {
 			if(Num) {
 				try {
 					for(Farmacie_Lazio obj : ListX) {
@@ -207,7 +207,7 @@ public class Filtri {
 		
 		
 		
-		if(tipoFiltri.equals("$mag")) {
+		if(tipoFiltri.equals("$maggiore")) {
 			if(Num) {
 				try {
 					for(Farmacie_Lazio obj : ListX) {
@@ -236,7 +236,7 @@ public class Filtri {
 		}
 		
 		
-		if(tipoFiltri.equals("$min")) {
+		if(tipoFiltri.equals("$minore")) {
 			if(Num) {
 				try {
 					for(Farmacie_Lazio obj : ListX) {
@@ -275,7 +275,7 @@ public class Filtri {
 	  public boolean Esiste() {
 	  
 	
-		  if(tipoFiltri.equals("$not") || tipoFiltri.equals("$eq") || tipoFiltri.equals("$mag") || tipoFiltri.equals("$min") || tipoFiltri.equals("$or"))
+		  if(tipoFiltri.equals("$uguale") || tipoFiltri.equals("$maggiore") || tipoFiltri.equals("$minore") || tipoFiltri.equals("$altro") || tipoFiltri.equals("$nonuguale"))
 			  return true;
 		  else
 			  return false;	
