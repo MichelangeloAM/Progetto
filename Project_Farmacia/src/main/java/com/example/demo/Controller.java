@@ -18,7 +18,8 @@ public class Controller {
 	 */
 	
 	@RequestMapping(value="/dati", method = RequestMethod.GET)
-	public Object Ricerca (@RequestParam(value="filtri", defaultValue = "empty")String filter, String attributo, String val1, @RequestParam(value="valoreB", defaultValue = "0") String valoreB) {
+	public Object Ricerca (@RequestParam(value="filtri", defaultValue = "empty")String filter, String attributo, String val1, 
+						   @RequestParam(value="valoreB", defaultValue = "0") String valoreB) {
 		
 		ArrayList <Farmacie_Lazio> List = new ArrayList<Farmacie_Lazio>();
 	
