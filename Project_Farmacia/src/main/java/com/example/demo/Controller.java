@@ -13,8 +13,6 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 public class Controller {
 	
-	final static String COMMA_DELIMITER = ";";
-	
 	/* 
 	 * Classe per la gestione delle funzioni di spring boot
 	 */
