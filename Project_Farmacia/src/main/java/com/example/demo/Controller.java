@@ -16,7 +16,7 @@ public class Controller (File file) {
 
 	@RequestMapping(value="/metadati", method=RequestMethod.GET)
 	public ArrayList<Farmacie_Lazio_Metadati> RichestaMetadati(File file){
-		return Pars_Ser_Metadati.Lettura_Meta(new File("file metadati.dat"));
+		return Pars_Ser_Metadati.Serialization_Metadati(new File("file metadati.dat"), ArrayList<Farmacie_Lazio_Metadati> metadati);
 	}
 	
 	/* 

@@ -17,7 +17,7 @@ public class Pars_Ser_Metadati {
 	return v;
     }
 	
-	public static void Serializatione_Metadati(File file, ArrayList<Farmacie_Lazio_Metadati> metadati) {
+	public static ArrayList<Farmacie_Lazio_Metadati> Serialization_Metadati(File file, ArrayList<Farmacie_Lazio_Metadati> metadati) {
 		   try {
 			   ObjectOutputStream output = new ObjectOutputStream(new BufferedOutputStream(new FileOutputStream(file)));
 			   output.writeObject(metadati);
@@ -26,6 +26,7 @@ public class Pars_Ser_Metadati {
 			  System.out.println("Errore");
 			  e.printStackTrace();
 		  }
+	return metadati;
 	}
 	
 }

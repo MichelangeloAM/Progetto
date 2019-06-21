@@ -9,7 +9,7 @@ public class Serializzazione_Dati {
 	
 	final static String COMMA_DELIMITER = ";";
 
-	public void Serialization(File file, ArrayList<Farmacie_Lazio> list) throws ParseException {   
+	public ArrayList<Farmacie_Lazio> Serialization(File file, ArrayList<Farmacie_Lazio> list) throws ParseException {   
 		
 		list = new ArrayList<Farmacie_Lazio>();
 		try (BufferedReader br = new BufferedReader(new FileReader(file))) {
@@ -31,9 +31,8 @@ public class Serializzazione_Dati {
 		} catch (IOException i) {
 			i.printStackTrace();
 		}
-		for(Farmacie_Lazio item: list) {		
-			System.out.println(list.toString());
+		return list;
 		}
 	} 
     
-}
+
