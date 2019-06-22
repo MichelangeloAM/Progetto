@@ -2,11 +2,20 @@ package com.example.demo;
 
 import java.io.Serializable;
 
+/**
+ *Classe dedicata alla gestione dei Metadati
+ */
 public class Farmacie_Lazio_Metadati implements Serializable {
 	public static final long serialVersionUID = 1L; 
 	private String Name;
 	private String Type;
 
+	/**
+	 * Descrizione Classe
+	 * 
+	 * @param Name variabile che controlla il nome del metadato
+	 * @param Type variabile che controlla il type del metadato
+	 */
 	public Farmacie_Lazio_Metadati (String Name, String Type) {
 		this.Name = Name;
 		this.Type = Type;
