@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example;
 
 import java.io.*;
 import java.lang.reflect.*;

@@ -22,7 +22,12 @@ public class Pars_Ser_Metadati {
 	public static ArrayList<Farmacie_Lazio_Metadati> getMetadata() {
 		ArrayList<Farmacie_Lazio_Metadati> v = new ArrayList<Farmacie_Lazio_Metadati>();
 		Class<?> c = Farmacie_Lazio.class;
-		Field[] attributes = c.getDeclaredFields();			
+		Field[] attributes = c.getDeclaredFields();	
+		
+		if(attributes.length == 0) {
+			System.out.println("array vuoto");
+		}
+		
 		for(int i=0; i<attributes.length; i++) {
 			Metadati annotation = attributes[i].getAnnotation(Metadati.class);
 			v.add(new Farmacie_Lazio_Metadati(annotation.name(), annotation.type()));

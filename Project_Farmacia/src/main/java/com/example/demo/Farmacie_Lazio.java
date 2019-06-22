@@ -47,6 +47,8 @@ public class Farmacie_Lazio implements Serializable {
 	
 	@Metadati(name="DescrizioneProvincia",type="String")
 		private String DescrizioneProvincia;
+	
+	@Metadati(name="CodiceRegione",type="String")
 		private String CodiceRegione;
 		
 	@Metadati(name="DescrizioneRegione",type="String")
