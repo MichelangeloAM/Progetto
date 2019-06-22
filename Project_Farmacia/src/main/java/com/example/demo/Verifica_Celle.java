@@ -2,7 +2,7 @@ package com.example.demo;
 
 import java.util.ArrayList;
 
-public class Verifica_Celle { //Classe Celle Ciao
+public class Verifica_Celle { 
 	
 public static ArrayList<Output_Verifica_Celle> getStatsString(ArrayList<String> strings) {
 		
