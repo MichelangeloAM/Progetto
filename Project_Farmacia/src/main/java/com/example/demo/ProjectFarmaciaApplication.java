@@ -16,7 +16,7 @@ import com.example.demo.*;
 @SpringBootApplication
 public class ProjectFarmaciaApplication {
 
-	public static void main(java.lang.String[] args) throws ParseException {
+	public static void main(String[] args) throws ParseException {
 		// Download CSV
 		Importa_Dati.main(args);
 		
