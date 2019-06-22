@@ -9,11 +9,12 @@ public class Serializzazione_Dati {
 	
 	final static String COMMA_DELIMITER = ";";
 
-	public ArrayList<Farmacie_Lazio> Serialization(File file, ArrayList<Farmacie_Lazio> list) throws ParseException {   
+	public static ArrayList<Farmacie_Lazio> Serialization(File file, ArrayList<Farmacie_Lazio> list) throws ParseException {   
 		
 		list = new ArrayList<Farmacie_Lazio>();
 		try (BufferedReader br = new BufferedReader(new FileReader(file))) {
 			String line;
+			br.readLine();
 			while ((line = br.readLine()) != null) {
 				String[] values = line.split(COMMA_DELIMITER);
 				SimpleDateFormat format = new SimpleDateFormat ("dd-MM-yyyy");
