@@ -3,9 +3,22 @@ package com.example.demo;
 import java.io.*;
 import java.util.*;
 import java.lang.reflect.Field;
-
+ /**
+  * Classe addetta al parsing e alla serializzazione
+  * dei metadati
+  *
+  */
 public class Pars_Ser_Metadati {
 	
+	/**
+	 * Parsing e Serializzazione dei metadati
+	 * I metadati vengono analizzati in ingresso (parsing)
+	 * e poi vengono salvati in un supporto (serializzazione),
+	 * in questo caso una lista (serializzazione)
+	 * 
+	 * @return ritorna una lista in cui sono contenuti i metadati
+	 * 
+	 */
 	public static ArrayList<Farmacie_Lazio_Metadati> getMetadata() {
 		ArrayList<Farmacie_Lazio_Metadati> v = new ArrayList<Farmacie_Lazio_Metadati>();
 		Class<?> c = Farmacie_Lazio.class;

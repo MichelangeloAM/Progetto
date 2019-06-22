@@ -18,7 +18,6 @@ import java.util.Date;
 
 public class Farmacie_Lazio implements Serializable {
 	
-	
 	@Metadati(name="DenominazioneSitoLogistico",type="String")
 		private String DenominazioneSitoLogistico ;
 	
@@ -72,6 +71,30 @@ public class Farmacie_Lazio implements Serializable {
 		
 	}
 	
+	/**
+	 * Vengono indicate le appartenenze degli attributi attraverso il this.attributo
+	 * 
+	 * Ognuno di questi attributi risiede all'interno del file Excel ListaFarmacieLazio
+	 * 
+	 * @param DenominazioneSitoLogistico 
+	 * @param Indirizzo
+	 * @param PartitaIva
+	 * @param Latitudine
+	 * @param CAP
+	 * @param CodiceComuneIstat
+	 * @param DescrizioneComune
+	 * @param CodiceProvinciaIstat
+	 * @param SiglaProvincia
+	 * @param DescrizioneProvincia
+	 * @param CodiceRegione
+	 * @param DescrizioneRegione
+	 * @param Localize
+	 * @param Longitudine
+	 * @param CodiceIdentificativoSito
+	 * @param DataInizio
+	 * @param DataFine
+	 * 
+	 */
 	public Farmacie_Lazio(String DenominazioneSitoLogistico, String Indirizzo, String PartitaIva, 
 						  double Latitudine, String CAP, String CodiceComuneIstat, String DescrizioneComune, 
 						  String CodiceProvinciaIstat, String SiglaProvincia, String DescrizioneProvincia,
@@ -201,6 +224,10 @@ public class Farmacie_Lazio implements Serializable {
 		return DataFine;
 	}	
 	
+	/**
+	 * Metodo toString per visualizzare tutti gli attributi
+	 * 
+	 */
 	@Override
 	public String toString() {
 		return "custom method toString for Farmacie_Lazio [DenominazioneSitoLogistico=" + 

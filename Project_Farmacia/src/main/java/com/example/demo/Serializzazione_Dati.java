@@ -5,10 +5,27 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
+/**
+ * Classe addetta alla serializzazione dei dati
+ *
+ */
 public class Serializzazione_Dati {
 	
+	/**
+	 * Dichiarazione del delimitatore dei dati
+	 * 
+	 */
 	final static String COMMA_DELIMITER = ";";
 
+	/**
+	 * Svolgimento della Serializzazione dei dati
+	 * 
+	 * @param file variabile a cui si assegna il file Excel ListaFarmacieLazio
+	 * @param list lista dove salva i dati
+	 * @return ritorna la lista con i dati serializzati
+	 * @throws ParseException eccezzione
+	 * 
+	 */
 	public static ArrayList<Farmacie_Lazio> Serialization(File file, ArrayList<Farmacie_Lazio> list) throws ParseException {   
 		
 		list = new ArrayList<Farmacie_Lazio>();

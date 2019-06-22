@@ -8,7 +8,6 @@ public class Filtri {
 	/**
 	 * Classe Filtri, con il compito di filtrare la lista fornita in input su richiesta dal controllore.
 	 * 
-	 * 
 	 */
 	
 	private String tipoFiltri;
@@ -25,7 +24,8 @@ public class Filtri {
 	 * @param ValoreA valore per il filtraggio
 	 * @param ValoreB valore per il filtraggio
 	 * @param ListX lista fornita su cui fare il filtraggio
-	 * @return ritorna una lista filtrata
+	 * @return ritorna una lista filtrata (ListaY)
+	 * 
 	 */
 	public Object Ricerca(String attr, String ValoreA, String ValoreB, ArrayList<Farmacie_Lazio> ListX){
 		
@@ -68,7 +68,6 @@ public class Filtri {
 			Num = true;
 		else
 			Num = false;
-		
 		
 		
 		if(tipoFiltri.equals("$uguale")) {
@@ -117,6 +116,7 @@ public class Filtri {
 			}
 		}
 		
+		
 		if(tipoFiltri.equals("$altro")) {
 			if(Num) {
 				try {
@@ -164,7 +164,6 @@ public class Filtri {
 		}
 		
 		
-		
 		if(tipoFiltri.equals("$nonuguale")) {
 			if(Num) {
 				try {
@@ -210,7 +209,6 @@ public class Filtri {
 				}
 			}
 		}
-		
 		
 		
 		if(tipoFiltri.equals("$maggiore")) {
@@ -279,6 +277,7 @@ public class Filtri {
 	  *
 	  *@return true se esiste
 	  *@return false se non esiste
+	  *
 	  */
 	  public boolean Esiste() {
 	  

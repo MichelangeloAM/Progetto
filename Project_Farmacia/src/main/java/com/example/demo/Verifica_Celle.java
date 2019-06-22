@@ -2,8 +2,20 @@ package com.example.demo;
 
 import java.util.ArrayList;
 
+/**
+ * Classe addetta alla verifica di cloni nella lista
+ *
+ */
 public class Verifica_Celle { 
 	
+	/**
+	 * In questa classe si verificano le ricorrenze e inoltre
+	 * si usa un contatore per sapere quante ne esistono
+	 * 
+	 * @param strings stringa che contiene le statistiche
+	 * @return ritorna le statistiche appena calcolate
+	 * 
+	 */
 public static ArrayList<Output_Verifica_Celle> getStatsString(ArrayList<String> strings) {
 		
 	ArrayList<Output_Verifica_Celle> stats = new  ArrayList<Output_Verifica_Celle>();
