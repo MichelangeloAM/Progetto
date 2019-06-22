@@ -18,15 +18,15 @@ public class ProjectFarmaciaApplication {
 
 	public static void main(String[] args) throws ParseException {
 		// Download CSV
-		Importa_Dati.main(args);
+		Importa_Dati.ScanUrl();
 		
 		// Parsing-Serialization Dati
 		ArrayList<Farmacie_Lazio> list = new ArrayList<Farmacie_Lazio>();
 		ArrayList<Farmacie_Lazio> Dati = Serializzazione_Dati.Serialization(new File ("ListaFarmacieLazio.csv"), list);
-		System.out.println(Dati);
 		
 		// Parsing-Serialization Metadati
-		ArrayList<Farmacie_Lazio_Metadati> Metadati = Pars_Ser_Metadati.getMetadata();
+		ArrayList<Farmacie_Lazio_Metadati> Metadati = new ArrayList<Farmacie_Lazio_Metadati>();
+	    Metadati = Pars_Ser_Metadati.getMetadata();
 		File dataFileMeta = new File("Metadati file.dat");
 		try {
 			dataFileMeta.createNewFile();
@@ -42,4 +42,3 @@ public class ProjectFarmaciaApplication {
 	
 
 }
-
