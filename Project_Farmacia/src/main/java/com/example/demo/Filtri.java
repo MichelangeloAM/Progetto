@@ -6,7 +6,7 @@ import java.util.ArrayList;
 public class Filtri {
 	
 	/**
-	 * Classe con il compito di filtrare la lista fornita in input su richiesta dal controllore.
+	 * Classe Filtri, con il compito di filtrare la lista fornita in input su richiesta dal controllore.
 	 * 
 	 * 
 	 */
@@ -273,10 +273,12 @@ public class Filtri {
 		return ListY;
 	}
 
-	  /*
-	  Metodo che segnala se tale filtro è stato effettivamente implementato nel programma
-	 
-	  @return true se il tipo di filtro esiste, false se non esiste
+	  /**
+	  *Metodo che ritorna true, se il metodo è stato implementato e
+	  *false, se il metodo non è stato implementato.
+	  *
+	  *@return true se esiste
+	  *@return false se non esiste
 	  */
 	  public boolean Esiste() {
 	  
