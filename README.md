@@ -40,5 +40,5 @@ NOTA IMPORTANTISSIMA: l'utente potrebbe ricevere diversi errori che potrebbero i
                       _ jsoup-1.12.1
                       _ junit-jupiter-params-5.4.0
                       
-                      l'utente deve quindi: procurarsi le librerie descritte sopra (facilmente reperibili da internet), fare Click                             destro sulla cartella del progetto, selezionare Bild Path> Configure Bild Path, cliccare su Java Build Path e,                           nella sezione "Libraries", selezionare Add External JARs. A questo punto basterà trovare le librerie appena                             scaricate, cliccare su "Apri" e in seguito su "Apply and Close";    
+          l'utente deve quindi: procurarsi le librerie descritte sopra (facilmente reperibili da internet), fare Click                             destro sulla cartella del progetto, selezionare Bild Path> Configure Bild Path, cliccare su Java Build Path e,                           nella sezione "Libraries", selezionare Add External JARs. A questo punto basterà trovare le librerie appena                             scaricate, cliccare su "Apri" e in seguito su "Apply and Close";    
 
