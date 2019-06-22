@@ -5,21 +5,27 @@ import java.util.ArrayList;
 
 public class Filtri {
 	
+	/**
+	 * Classe con il compito di filtrare la lista fornita in input su richiesta dal controllore.
+	 * 
+	 * 
+	 */
+	
 	private String tipoFiltri;
 
 	public Filtri(String tipoFiltri) {
 		this.tipoFiltri = tipoFiltri;
 	}
 	
-	 /*
-	 Metodo che attua un'azione di ricerca nella lista di input mandando in output una lista filtrata
-	 secondo il tipo di filtro, l'attributo e il valore di riferimento
-	 
-	 @param attr Attributo su cui filtrare i dati
-	 @param ValoreA Valore di riferimento usato nel filtraggio
-	 @param ValoreB Valore di riferimento usato nel filtraggio (solo per $or)
-	 @param ListX Lista data in input su cui il metodo farà il filtraggio
-	 @return	Lista filtrata
+	/**
+	 * Questo metodo svolge l'azione di ricerca all'interno della lista Farmacie_Lazio, dando come output
+	 * una lista filtrata in base ai filtri richiesti, agli attributi ed al valore di rifermento.
+	 *  
+	 * @param attr abbreviazione di attributo, esso è l'attributo su cui vengono filtrati i dati
+	 * @param ValoreA valore per il filtraggio
+	 * @param ValoreB valore per il filtraggio
+	 * @param ListX lista fornita su cui fare il filtraggio
+	 * @return ritorna una lista filtrata
 	 */
 	public Object Ricerca(String attr, String ValoreA, String ValoreB, ArrayList<Farmacie_Lazio> ListX){
 		
@@ -281,5 +287,3 @@ public class Filtri {
 			  return false;	
 	  }
 }	
-		// Ciao, Eclipse sta avendo nuovamente problemi, questo commento potrà essere cancellato subito dopo la risoluzione della mia problematica.
-		// Secondo tentativo di risolvere...
