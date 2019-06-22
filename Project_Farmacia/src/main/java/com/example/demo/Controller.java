@@ -51,7 +51,7 @@ public class Controller {
 	
 	@RequestMapping(value="/statistics", method = RequestMethod.GET)
 	public Object StatisticsRequest(@RequestParam(value="filter", defaultValue = "vuoto")String filter, String attribute, String value1, @RequestParam(value = "value2", defaultValue = "0")String value2){
-		Vector<Object> attributes = new Vector<Object>();
+		ArrayList<Object> attributes = new ArrayList<Object>();
 		try{
 			Method metodo = Farmacie_Lazio.class.getMethod("get" + attribute.substring(0,1).toUpperCase() + attribute.substring(1));
 			ArrayList<Farmacie_Lazio> list = Lettura_File.LetturaDati(new File("data file.dat"));
@@ -104,12 +104,10 @@ public class Controller {
 			  return Verifica_Celle.getStatsString(list_string);
 		  }
 		else {
-			Vector<Double> vNumber = new Vector<Double>();
+			ArrayList<Double> lNumber = new ArrayList<Double>();
 			for(Object number : attributes)
-				vNumber.add((Double)number);
-			
-			return new NumStatistics(Statistics.getAvg(vNumber), Statistics.getMin(vNumber), Statistics.getMax(vNumber),
-					Statistics.getDevStd(vNumber), Statistics.getSum(vNumber), vNumber.size());
+				lNumber.add((Double)number);
+			return lNumber;
 		}
 	}
 }
