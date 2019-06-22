@@ -15,8 +15,21 @@ import org.json.simple.JSONObject;
 import org.json.simple.JSONValue;
 import org.json.simple.parser.ParseException;
 
+
+/**
+ * Classe Improta_Dati, essa ha il compito di prelevare i dati dall'URL fornito e
+ * scaricarli attraverso il metodo download
+ */
+
 public class Importa_Dati {
 
+	/**
+	 * Il metodo principale prende in entrata un indirizzo URL e controlla se rientrano nella
+	 * condizioni dei vari try & catch.
+	 * 
+	 * @param args gli argomenti
+	 */
+	
 	public static void main(String[] args) {
 
 		String url = "https://www.dati.gov.it/api/3/action/package_show?id=886075d1-b5a6-4ee8-ae74-38febaf74108";
@@ -63,6 +76,15 @@ public class Importa_Dati {
 			e.printStackTrace();
 		}
 	}
+	
+	/**
+	 * Il metodo download ha l'effettivo compito di scaricare il documento
+	 * presente all'URL fornito.
+	 *
+	 * @param url l'indirizzo del file
+	 * @param fileName il nome assegnato al file
+	 * @throws Exception l'eccezzione
+	 */
 	
 	public static void download(String url, String fileName) throws Exception {
 	    try (InputStream in = URI.create(url).toURL().openStream()) {

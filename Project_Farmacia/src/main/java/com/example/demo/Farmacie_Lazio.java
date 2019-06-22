@@ -9,7 +9,15 @@ import java.util.Date;
 	String name();
 	String type();
 }
+
+/**
+ * Classe relativa agli oggetti contenuti nel file csv.
+ * Composta dal metodo toString(), getter e setters e  infine costruttori.
+ *
+ */
+
 public class Farmacie_Lazio implements Serializable {
+	
 	
 	@Metadati(name="DenominazioneSitoLogistico",type="String")
 		private String DenominazioneSitoLogistico ;
