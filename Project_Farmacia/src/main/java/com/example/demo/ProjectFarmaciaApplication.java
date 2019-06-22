@@ -8,6 +8,11 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import com.example.demo.*;
 
+/**
+ * @author Ziomike98
+ * @author Simdr98
+ */
+
 
 @SpringBootApplication
 public class ProjectFarmaciaApplication {

@@ -7,7 +7,6 @@ import com.example.demo.*;
 
 import org.springframework.web.bind.annotation.*;
 
-
 @RestController
 public class Controller {
 	
