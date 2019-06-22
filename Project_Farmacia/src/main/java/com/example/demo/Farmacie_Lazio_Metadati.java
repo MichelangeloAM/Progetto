@@ -11,40 +11,30 @@ public class Farmacie_Lazio_Metadati implements Serializable {
 	private String Type;
 
 	/**
-	 * Descrizione Classe
+	 * La Classe gestisce la struttura dei metadati atrtraverso il costruttore
+	 * e i metodi toString, get e set
 	 * 
 	 * @param Name variabile che controlla il nome del metadato
 	 * @param Type variabile che controlla il type del metadato
+	 * 
 	 */
 	public Farmacie_Lazio_Metadati (String Name, String Type) {
 		this.Name = Name;
 		this.Type = Type;
 	}
 
-	/**
-	 * @return the Name
-	 */
 	public String getName() {
 		return Name;
 	}
 
-	/**
-	 * @param Name the Name to set
-	 */
 	public void setName(String Name) {
 		this.Name = Name;
 	}
 
-	/**
-	 * @return the Type
-	 */
 	public String getType() {
 		return Type;
 	}
 
-	/**
-	 * @param Type the Type to set
-	 */
 	public void setType(String Type) {
 		this.Type = Type;
 	}
